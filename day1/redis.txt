@@ -14,30 +14,30 @@ Redis-cli --Start the redis local host
 2.GET keyname        -It will print string keyvalue .
 3.DEL keyname	     -It will delete the value of keyname.
 4.EXISTS keyname     -It will print the interger value(0and 1). if the keyname is exists then print the integer 1 else 0.
-Ex: SET name AK
+Ex: SET name Aditi
     EXISTS name
    
 We have just created the object 
-{name:'AK'}
+{name:'Aditi'}
 
 5.KEYS *    			-It will print the all keynames
 6.FLUSHALL  			-It will delete all the keyvalues
 7.clear    			-It will clear the screen
 8.ttl keyname   		-ttl(Time to live) It wil print how long has it been here or how long did it take to expire (keyname value).
 9.expire keyname sec 		-It will print the expire time .
-10.setex name 10 AK		-It will set the keyvalue and expire time.
+10.setex name 10 		-It will set the keyvalue and expire time.
 
 *************Array In Redis************
-Object :{teammeber : ["AK","Viren"]}
+Object :{teammeber : ["Mrudula","Adi"]}
 
 1.lpush              -It will push at the zero index(Stack) Array .
 Ex:-
-lpush teammember AK
+lpush teammember Adi
 LRANGE teammember 0 -1
 
 2.rpush		     			-It will push at the last index(Stack) Array .
 Ex:-
-lpush teammember Viren
+lpush teammember Mrudula
 LRANGE teammember 0 -1
 
 3. LRANGE keyname startpoint endpoint   -It will print the the array value of start index to end index.
@@ -77,7 +77,7 @@ person:
 
 1.HSET objectname  keyname value   -It will set an object Inside an object so need two keyname.
 Ex:-
-HSET person name AK
+HSET person name Adi
 HSET person age 20
 2.HGET objectname keyname          -It will print  keyvalue.
 Ex:-
